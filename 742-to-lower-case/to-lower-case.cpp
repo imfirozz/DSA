@@ -6,7 +6,7 @@ public:
         {
             if(s[i]>='A'&& s[i]<='Z')
             {
-                s[i] = 'a'+s[i]-'A';
+                s[i] = 32+s[i];
             }
         }
         return s;
