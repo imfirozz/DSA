@@ -1,13 +1,9 @@
 class Solution {
 public:
-    int countCommas(int n) {
-        int ans = 0;
-        for (int i = 1; i <= n; i++) {
+   int countCommas(int n) {
+        if (n < 1000)
+            return 0;
 
-            if (i > 999) {
-                ans+=1;
-            }
-        }
-        return ans;
+        return (n - 1000) + 1;
     }
 };
