@@ -16,7 +16,7 @@ class Solution {
     bool isCircular(Node *head) {
         // code here
            if(!head)
-        return 1;
+        return 0;
         Node*temp = head->next;
         
      
